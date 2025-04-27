@@ -6,7 +6,7 @@ from flask import Flask, render_template, Response, request, jsonify
 import os
 
 # Initialize Flask app
-app = Flask(__name__, template_folder='../templates')
+app = Flask(__name__)
 
 # Load YOLO models
 vehicle_model = YOLO("yolov8n.pt")  # or yolov8s.pt for better accuracy
